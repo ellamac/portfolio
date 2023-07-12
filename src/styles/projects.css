@@ -1,0 +1,125 @@
+@import "./index.css";
+
+.project {
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+}
+.project.header,
+.project.para,
+.project.intro,
+.project.subhead {
+  margin: 2vh 0;
+}
+/* =================================== */
+/* ============BACK BUTTON============ */
+/* =================================== */
+.project.back {
+  flex: 0 0 100%;
+  background-color: var(--main-light-color);
+}
+.project.backLink {
+  padding: 0.5em;
+  width: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5em;
+}
+.project.back:first-of-type {
+  order: -100;
+}
+.project.back:last-of-type {
+  order: 100;
+}
+.project.backLink:hover {
+  border: var(--main-hover-border);
+  box-shadow: var(--main-hover-box-shadow);
+}
+
+.project.backArrow {
+  flex: 0 0 0.9em;
+  height: auto;
+  margin: 0.1em 0.1em 0.2em;
+}
+
+.project.backLink > * {
+  vertical-align: middle;
+}
+
+/* =================================== */
+/* ==============IMAGES=============== */
+/* =================================== */
+.project.picncap {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.project.piccont {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.project.piccont img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project.picncap.img {
+  overflow: hidden;
+  width: min-content;
+  width: 45%;
+  max-height: 40vh;
+  float: right;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.project.picncap.img.full {
+  width: 100%;
+}
+.project.picncap.img:nth-of-type(odd) {
+  float: left;
+}
+.project.picncap.img .piccont {
+  flex-flow: row nowrap;
+  align-items: initial;
+}
+
+@media screen and (orientation: portrait) {
+  .project.picncap.img {
+    max-width: initial;
+    width: 90%;
+    max-height: 30vh;
+    float: initial;
+    margin: auto;
+  }
+}
+
+.project.picncap .caption {
+  font-weight: 400;
+  margin: 0.3em 0 0;
+}
+
+/* =================================== */
+/* =============HEADINGS============== */
+/* =================================== */
+
+.project.picncap.mainimg .piccont {
+  flex: 1 1 calc(50vmin - 0.5em);
+  overflow: hidden;
+  max-height: 25vh;
+}
+
+.project.subhead {
+  flex: 0 0 100%;
+}
+
+.project.intro {
+  font-weight: 400;
+  font-style: italic;
+}

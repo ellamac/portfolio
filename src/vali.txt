@@ -1,0 +1,11 @@
+<header className="App-header">
+        <h1>Welcome to my portfolio!</h1>
+        <h2>Introduction</h2>
+        <p>I am passionate about accessibility, user experiences and user interface design. In addition to designing usable and effective user experiences, I have skills in implementing them with modern frameworks. I am a fresh graduate of University of Jyväskylä with a bachelor's in Computer Science and master's in Cognitive Science. With previous experiences in coding and more in-depth knowledge of users' thinking, I have a comprehensive skillset in understanding users expectations and how to meet them.</p>
+        <h2>What I'm looking for?</h2>
+        <p>I am currently looking for open junior positions in UX- or UI- designing, accessibility, user research or frontend teams. Opporunities that offer mentoring from experienced professionals and understand the importance of skill acquisition are on the top of my list. I am located in the Helsinki Metropoly area.</p>
+        <h2>Résumé</h2>
+        <p>tähän tulee CV</p>
+        <h2>Projects</h2>
+        <p>tähän tulee edelliset hommat</p>
+      </header>

@@ -1,0 +1,190 @@
+/*!!!!!========RESPONSIVE========!!!!!*/
+
+/*Biggest screen size (example desktop) */
+#root {
+  font-size: 1.5vmin;
+  padding: 0 0 3vmin;
+}
+.content {
+  padding: 5vmin calc(50vw - 40ch) 10vmin;
+}
+
+@media (max-width: 80ch) {
+  #root {
+    font-size: 3vmin;
+    padding: 0 0 10vmin;
+  }
+  .content {
+    padding: 2vmin 5vmin 10vmin;
+  }
+  .navbar.bottom {
+    flex-flow: column nowrap;
+  }
+}
+
+/* NORMAL STYLING STARTS */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+
+  /*universal colors and fonts */
+  --main-bg-color: rgb(213, 213, 213);
+  --main-dark-color: rgb(0, 0, 0);
+  --main-light-color: #fff;
+  --main-highlight-color: rgb(35, 134, 96);
+  --main-highlight-color-60p: rgb(35, 134, 96, 0.6);
+  --main-highlight-color-30p: rgb(35, 134, 96, 0.3);
+  --main-serif-font: "Archivo", sans-serif;
+  --main-sans-serif-font: "Inter", sans-serif;
+  --main-hover-border: 1px solid var(--main-highlight-color);
+  --main-hover-box-shadow: 2.5px 2.5px var(--main-highlight-color);
+  font-family: var(--main-sans-serif-font);
+  color: var(--main-dark-color);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* makes the content (everything else than top/bottom navs) fill the whole screen */
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  gap: 3em;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--main-serif-font);
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1em;
+}
+h2 {
+  margin: 0.8em 0 0.3em;
+  font-weight: 700;
+  padding: 0;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 1em;
+
+  margin: 0.8em 0 0.3em;
+  padding: 0;
+}
+
+h4,
+h5,
+p {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: inherit; /* no underline */
+  color: inherit;
+}
+
+p a {
+  font-weight: 500;
+  color: var(--main-highlight-color);
+}
+p a:hover {
+  padding: 0.25em 0.2em 0;
+  background-color: var(--main-highlight-color);
+  color: var(--main-light-color); /* blue colors for links too */
+}
+
+a[target="_blank"] > svg {
+  width: 0.7em;
+  height: auto;
+}
+
+.brief {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2em;
+  height: 25vh;
+}
+.brief .pic {
+  max-height: 25vh;
+  max-width: 100%; /* fixes firefox's problems with img container widths */
+  height: 100%; /* fixes firefox's problems with img container widths */
+}
+.brief .pic img {
+  max-height: 100%;
+}
+
+.brief .info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+@media screen and (orientation: portrait) {
+  .brief {
+    width: 100%;
+    height: initial;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: initial;
+  }
+
+  .brief .pic {
+    height: 25vh;
+    flex: 1 1 auto;
+    margin: 0 0.5em 0 0;
+  }
+
+  .brief .info {
+    flex: 2 1 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+}
+
+.brief .info > * {
+  margin: 0;
+}
+
+button {
+  padding: 0.5em;
+  border-radius: 0;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.profile .overview .intro.wholetext {
+  overflow: visible;
+}

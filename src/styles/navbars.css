@@ -1,0 +1,91 @@
+@import "./index.css";
+
+.navbar {
+  padding: 1em;
+  margin: 0;
+  list-style-type: none;
+  background-color: var(--main-light-color);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  align-content: center;
+  gap: 0.4em;
+
+  z-index: 100;
+}
+
+.navitem {
+  text-align: center;
+  padding: 0.4em 0.2em 0.1em;
+  flex: 0 0 10%;
+}
+
+.navitem.logo {
+  font-family: var(--main-serif-font);
+  font-size: 2em;
+  font-weight: 800;
+  flex: 2 2 auto;
+  text-align: left;
+}
+
+.navitem a {
+  color: var(--main-dark-color);
+  text-decoration: none;
+  line-height: 0;
+}
+
+.navitem.logo a {
+  padding: 0.2em 0.2em 0;
+}
+.navbar.top {
+  position: sticky;
+  top: 0;
+  margin-bottom: 2em;
+  flex-flow: row wrap;
+  justify-content: right;
+  align-items: center;
+  align-content: space-between;
+  border-bottom: 1px solid var(--main-highlight-color);
+}
+
+.navbar.bottom {
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2em 0 0;
+  margin: 1em 0 0;
+  border-top: 1px solid var(--main-highlight-color);
+  bottom: 0;
+  position: relative;
+}
+
+@media (max-width: 80ch) {
+}
+
+.navitem.link,
+.navitem.logo a {
+  padding: 6.5px 4.5px 2.5px;
+  border: 1px solid transparent;
+  box-shadow: 2.5px 2.5px transparent;
+}
+
+.navbar.top .navitem.link:focus,
+.navbar.top .navitem.link:hover,
+.navbar.top .navitem.logo a:hover {
+  border: 1px solid var(--main-highlight-color);
+  box-shadow: 2.5px 2.5px var(--main-highlight-color);
+}
+
+.navbar.bottom .navitem.text {
+  padding: 0.2em 0.2em 0em;
+}
+
+.navbar.bottom .navitem.link a {
+  padding: 0.2em 0.2em 0em;
+  color: var(--main-highlight-color);
+  font-weight: 500;
+}
+
+.navbar.bottom .navitem.link a:hover {
+  background-color: var(--main-highlight-color);
+  color: var(--main-light-color);
+}
