@@ -24,10 +24,6 @@ const Brief = (props) => {
             to follow my progress as I transition from a graduate student to a
             professional designer–developer.
           </p>
-          <p>
-            Currently working on:{" "}
-            <Link to="/projects/portfolio">This website</Link> 😁
-          </p>
         </div>
       </div>
     </>

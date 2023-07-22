@@ -145,7 +145,7 @@ a[target="_blank"] > svg {
 .brief .info {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1em;
 }
 
