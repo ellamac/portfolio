@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Brief = (props) => {
   useEffect(() => {
@@ -9,15 +9,15 @@ const Brief = (props) => {
   });
   return (
     <>
-      <div className="brief">
-        <div className="pic">
+      <div className='brief'>
+        <div className='pic'>
           <img
-            src="https://res.cloudinary.com/dvvizrtil/image/upload/v1687773619/portfolio/ella.jpg"
-            alt="My headshot"
+            src='https://res.cloudinary.com/dvvizrtil/image/upload/v1687773619/portfolio/ella2.jpg'
+            alt='My headshot'
           />
         </div>
 
-        <div className="info">
+        <div className='info'>
           <h1>Welcome to my portfolio!</h1>
           <p>
             This porfolio is for others to check out my previous work and for me
