@@ -25,9 +25,6 @@
   cursor: pointer;
   border: 2px solid var(--main-highlight-color);
 }
-.card.container:active {
-  box-shadow: var(--main-active-box-shadow);
-}
 
 .card.bg {
   width: 20em;
@@ -71,7 +68,4 @@ a.newest.all {
 
 a.newest.all:hover {
   border-color: var(--main-highlight-color);
-}
-a.newest.all:active {
-  box-shadow: var(--main-active-box-shadow);
 }

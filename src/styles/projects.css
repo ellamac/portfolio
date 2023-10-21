@@ -40,9 +40,7 @@
 .project.backLink:hover {
   border: 2px solid var(--main-highlight-color);
 }
-.project.backLink:active {
-  box-shadow: var(--main-active-box-shadow);
-}
+
 .project.backArrow {
   flex: 0 0 0.9em;
   height: auto;

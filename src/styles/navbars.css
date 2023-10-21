@@ -19,10 +19,12 @@
   flex: 0 0 10%;
   box-sizing: border-box;
   height: calc(2em + 4px); /*height + border widths*/
+
   > a {
     text-align: center;
     vertical-align: center;
     line-height: 2em;
+    margin: 0 0.5em;
   }
 }
 
@@ -51,7 +53,6 @@
   align-items: center;
   align-content: space-between;
   border-bottom: 2px solid var(--main-highlight-color);
-  gap: 2em;
 }
 
 .navbar.bottom {
@@ -75,10 +76,6 @@
 .navbar.top .navitem.logo a:hover {
   box-shadow: var(--main-box-shadow);
   border: 2px solid var(--main-highlight-color);
-}
-.navbar.top .navitem.logo a:active,
-.navbar.top .navitem.link:active {
-  box-shadow: var(--main-active-box-shadow);
 }
 
 .navbar.bottom .navitem.text {
