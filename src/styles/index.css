@@ -44,8 +44,9 @@ body {
   --main-highlight-color-30p: rgb(35, 134, 96, 0.3);
   --main-serif-font: 'Archivo', sans-serif;
   --main-sans-serif-font: 'Inter', sans-serif;
-  --main-hover-border: 1px solid var(--main-highlight-color);
-  --main-hover-box-shadow: 2.5px 2.5px var(--main-highlight-color);
+  --main-hover-border: 0;
+  --main-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
+  --main-active-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.5);
   font-family: var(--main-sans-serif-font);
   color: var(--main-dark-color);
 }

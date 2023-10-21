@@ -1,4 +1,4 @@
-@import "./index.css";
+@import './index.css';
 
 .navbar {
   padding: 1em;
@@ -16,8 +16,14 @@
 
 .navitem {
   text-align: center;
-  padding: 0.4em 0.2em 0.1em;
   flex: 0 0 10%;
+  box-sizing: border-box;
+  height: calc(2em + 4px); /*height + border widths*/
+  > a {
+    text-align: center;
+    vertical-align: center;
+    line-height: 2em;
+  }
 }
 
 .navitem.logo {
@@ -26,17 +32,16 @@
   font-weight: 800;
   flex: 2 2 auto;
   text-align: left;
+  > a {
+    padding: 0.2em;
+  }
 }
 
 .navitem a {
   color: var(--main-dark-color);
   text-decoration: none;
-  line-height: 0;
 }
 
-.navitem.logo a {
-  padding: 0.2em 0.2em 0;
-}
 .navbar.top {
   position: sticky;
   top: 0;
@@ -45,7 +50,8 @@
   justify-content: right;
   align-items: center;
   align-content: space-between;
-  border-bottom: 1px solid var(--main-highlight-color);
+  border-bottom: 2px solid var(--main-highlight-color);
+  gap: 2em;
 }
 
 .navbar.bottom {
@@ -53,26 +59,26 @@
   justify-content: center;
   padding: 2em 0 0;
   margin: 1em 0 0;
-  border-top: 1px solid var(--main-highlight-color);
+  border-top: 2px solid var(--main-highlight-color);
   bottom: 0;
   position: relative;
 }
 
-@media (max-width: 80ch) {
-}
-
 .navitem.link,
 .navitem.logo a {
-  padding: 6.5px 4.5px 2.5px;
-  border: 1px solid transparent;
-  box-shadow: 2.5px 2.5px transparent;
+  border: 2px solid transparent;
+  border-radius: 0.5em;
 }
 
 .navbar.top .navitem.link:focus,
 .navbar.top .navitem.link:hover,
 .navbar.top .navitem.logo a:hover {
-  border: 1px solid var(--main-highlight-color);
-  box-shadow: 2.5px 2.5px var(--main-highlight-color);
+  box-shadow: var(--main-box-shadow);
+  border: 2px solid var(--main-highlight-color);
+}
+.navbar.top .navitem.logo a:active,
+.navbar.top .navitem.link:active {
+  box-shadow: var(--main-active-box-shadow);
 }
 
 .navbar.bottom .navitem.text {

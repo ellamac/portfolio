@@ -26,7 +26,11 @@
   justify-content: left;
   align-items: center;
   gap: 0.5em;
+  border: 2px solid transparent;
+  border-radius: 0.5em;
+  box-shadow: var(--main-box-shadow);
 }
+
 .project.back:first-of-type {
   order: -100;
 }
@@ -34,10 +38,11 @@
   order: 100;
 }
 .project.backLink:hover {
-  border: var(--main-hover-border);
-  box-shadow: var(--main-hover-box-shadow);
+  border: 2px solid var(--main-highlight-color);
 }
-
+.project.backLink:active {
+  box-shadow: var(--main-active-box-shadow);
+}
 .project.backArrow {
   flex: 0 0 0.9em;
   height: auto;
@@ -52,6 +57,7 @@
 /* ==============IMAGES=============== */
 /* =================================== */
 .project.picncap {
+  max-height: 30vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -69,7 +75,6 @@
   .project.picncap.img {
     max-width: initial;
     width: 90%;
-    max-height: 30vh;
     float: initial;
     margin: auto;
   }

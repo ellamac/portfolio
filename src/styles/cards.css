@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  gap: 1em;
+  gap: 2em;
 }
 
 .card.container {
@@ -15,22 +15,18 @@
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  padding: 0.5em;
+  padding: 1em;
   border: 2px solid transparent;
-  box-shadow: 4px 4px transparent;
+  border-radius: 1.5em;
+  box-shadow: var(--main-box-shadow);
 }
 .card.container:hover {
   margin: 0;
   cursor: pointer;
   border: 2px solid var(--main-highlight-color);
-  box-shadow: 4px 4px var(--main-highlight-color);
 }
-.card.container:nth-child(even):hover {
-  box-shadow: -4px 4px var(--main-highlight-color);
-}
-
-.card.container:nth-child(even) {
-  flex-flow: row-reverse wrap;
+.card.container:active {
+  box-shadow: var(--main-active-box-shadow);
 }
 
 .card.bg {
@@ -40,8 +36,15 @@
   position: relative;
   top: 0;
   flex: 1 1 calc(50% - 2em);
+  border-radius: 0.5em 0 0 0.5em;
 }
 
+.card.container:nth-child(even) {
+  flex-flow: row-reverse wrap;
+  > .card.bg {
+    border-radius: 0 0.5em 0.5em 0;
+  }
+}
 .card.content {
   padding: initial;
   flex: 1 1 calc(50% - 2em);
@@ -61,9 +64,14 @@ a.newest.all {
   border: 1px solid transparent;
   box-shadow: 2.5px 2.5px transparent;
   align-self: flex-end;
+  border: 2px solid transparent;
+  border-radius: 0.5em;
+  box-shadow: var(--main-box-shadow);
 }
 
 a.newest.all:hover {
-  border: 1px solid var(--main-highlight-color);
-  box-shadow: 2.5px 2.5px var(--main-highlight-color);
+  border-color: var(--main-highlight-color);
+}
+a.newest.all:active {
+  box-shadow: var(--main-active-box-shadow);
 }
