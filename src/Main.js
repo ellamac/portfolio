@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import Papa from "papaparse";
+import React, { useState, useEffect } from 'react';
+import Papa from 'papaparse';
 
-import { chunkDatas, sortDatas } from "./helpers/DataHelpers";
-import ScrollToTop from "./helpers/scrollToTop";
-import NavbarTop from "./components/NavbarTop";
-import NavbarBottom from "./components/NavbarBottom";
-import Content from "./components/Content";
+import { chunkDatas, sortDatas } from './helpers/DataHelpers';
+import ScrollToTop from './helpers/scrollToTop';
+import NavbarTop from './components/NavbarTop';
+import NavbarBottom from './components/NavbarBottom';
+import Content from './components/Content';
 
 const dataFiles = [
-  "https://docs.google.com/spreadsheets/d/1ZvsFzxtHgEVvCQRLecKeQe5MjBqMgs3VQkoxqgsMW3E/pub?output=csv",
-  "https://docs.google.com/spreadsheets/d/1l0V_iJj2vXHyf_MUvBJcrE9EPcTmQAA1eOxBXfJiv1s/pub?output=csv",
+  'https://docs.google.com/spreadsheets/d/1ZvsFzxtHgEVvCQRLecKeQe5MjBqMgs3VQkoxqgsMW3E/pub?output=csv',
+  'https://docs.google.com/spreadsheets/d/1l0V_iJj2vXHyf_MUvBJcrE9EPcTmQAA1eOxBXfJiv1s/pub?output=csv',
 ];
 
 const Main = (props) => {
@@ -37,7 +37,7 @@ const Main = (props) => {
         });
         setData(sortDatas(chunkDatas(datas))); // now since .then() excutes after all promises are resolved, filesData contains all the parsed files.
       })
-      .catch((err) => console.log("Something went wrong:", err));
+      .catch((err) => console.log('Something went wrong:', err));
   }, []);
 
   return (

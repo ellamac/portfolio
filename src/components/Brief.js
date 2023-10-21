@@ -8,25 +8,23 @@ const Brief = (props) => {
     //Runs ion the first render and any time any dependency value changes if ends with }, [prop, state]);
   });
   return (
-    <>
-      <div className='brief'>
-        <div className='pic'>
-          <img
-            src='https://res.cloudinary.com/dvvizrtil/image/upload/v1687773619/portfolio/ella2.jpg'
-            alt='My headshot'
-          />
-        </div>
+    <section className='brief'>
+      <figure className='pic'>
+        <img
+          src='https://res.cloudinary.com/dvvizrtil/image/upload/v1687773619/portfolio/ella2.jpg'
+          alt='My headshot'
+        />
+      </figure>
 
-        <div className='info'>
-          <h1>Welcome to my portfolio!</h1>
-          <p>
-            This porfolio is for others to check out my previous work and for me
-            to follow my progress as I transition from a graduate student to a
-            professional designer–developer.
-          </p>
-        </div>
-      </div>
-    </>
+      <main className='info'>
+        <h2>What you'll find on here</h2>
+        <p>
+          This porfolio is for others to check out my previous work and for me
+          to follow my progress as I transition from a graduate student to a
+          professional designer–developer.
+        </p>
+      </main>
+    </section>
   );
 };
 

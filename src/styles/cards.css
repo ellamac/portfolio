@@ -1,4 +1,4 @@
-@import "./index.css";
+@import './index.css';
 
 .cardnav {
   width: 100%;
@@ -52,17 +52,18 @@
 .newest {
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 1em;
 }
 
-.newest.all {
+a.newest.all {
   padding: 0.5em;
   border: 1px solid transparent;
   box-shadow: 2.5px 2.5px transparent;
+  align-self: flex-end;
 }
 
-.newest.all:hover {
+a.newest.all:hover {
   border: 1px solid var(--main-highlight-color);
   box-shadow: 2.5px 2.5px var(--main-highlight-color);
 }

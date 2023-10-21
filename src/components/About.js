@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const About = (props) => {
   return (
-    <div className="about">
+    <section className='about'>
       <h2>About me</h2>
       <p>
         I aim to create successful user experiences, usable interfaces, and
@@ -15,7 +15,7 @@ const About = (props) => {
         I believe bridging the gap between designers and developers is crucial
         when building successful products and experiences!
       </p>
-    </div>
+    </section>
   );
 };
 

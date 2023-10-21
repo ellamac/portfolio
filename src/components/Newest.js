@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import CardNav from "./CardNav";
-import { Link } from "react-router-dom";
+import CardNav from './CardNav';
+import { Link } from 'react-router-dom';
 
 const Newest = ({ header, data, type, back }) => {
   return (
-    <div className="newest">
+    <section className='newest container'>
+      <h2>Newest projects</h2>
       {data && data.length > 0 ? (
         <CardNav
           header={header}
@@ -15,11 +16,11 @@ const Newest = ({ header, data, type, back }) => {
         />
       ) : (
         <p>Loading...</p>
-      )}{" "}
-      <Link className="newest all" to="/projects">
+      )}{' '}
+      <Link className='newest all' to='/projects'>
         All projects
       </Link>
-    </div>
+    </section>
   );
 };
 
