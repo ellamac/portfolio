@@ -6,8 +6,8 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const Project = ({ data }) => {
   const { name } = useParams();
-
-  const [proj, setProj] = useState([{ type: 'subehead', content: 'loading' }]);
+  console.log('name', name);
+  const [proj, setProj] = useState([{ type: 'p', content: 'loading...' }]);
 
   useEffect(() => {
     if (data && data.length > 0) {
@@ -15,8 +15,7 @@ const Project = ({ data }) => {
         data.find((d) => d.find((p) => p.type === 'name' && p.content === name))
       );
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [data, name]);
 
   const switchhHtmlElements = (object, index) => {
     switch (object.type) {
