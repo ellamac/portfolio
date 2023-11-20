@@ -21,7 +21,7 @@ const Brief = (props) => {
         <p>
           This porfolio is for others to check out my previous work and for me
           to follow my progress as I transition from a graduate student to a
-          professional designer–developer.
+          professional.
         </p>
       </main>
     </section>
