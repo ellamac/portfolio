@@ -1,4 +1,4 @@
-@import "./index.css";
+@import './index.css';
 
 p.cv {
   padding: 0;
@@ -25,4 +25,8 @@ h3.cv.subhead {
 
 h3.cv.subhead + p {
   margin: 0;
+}
+
+.cv > div > button.active {
+  background-color: red;
 }

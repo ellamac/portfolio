@@ -1,12 +1,25 @@
 import React from 'react';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import getLanguage from '../data/GetLanguage';
 
 const Contact = (props) => {
   return (
     <section>
-      <h1>Contact information</h1>
-      <h2>I am looking for work!</h2>
-      <p>Please contact me via email or LinkedIn:</p>
+      <h1>
+        {getLanguage({ content: 'Contact information', fi: 'Yhteystiedot' })}
+      </h1>
+      <h2>
+        {getLanguage({
+          content: 'I am looking for work!',
+          fi: 'Olen avoin uusille tehtäville!',
+        })}
+      </h2>
+      <p>
+        {getLanguage({
+          content: 'Please contact me via email or LinkedIn:',
+          fi: 'Ota yhteyttä minuun sähköpostitse tai linkkarissa:',
+        })}
+      </p>
       <p>
         email:{' '}
         <a href='mailto:ella@makela.co' target='_blank' rel='noreferrer'>
@@ -24,7 +37,7 @@ const Contact = (props) => {
         </a>
       </p>
       <p>
-        GitHub:
+        GitHub:{' '}
         <a
           href='https://github.com/stars/ellamac/lists/portfolio'
           target='_blank'

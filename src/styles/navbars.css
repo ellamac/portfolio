@@ -66,14 +66,16 @@
 }
 
 .navitem.link,
-.navitem.logo a {
+.navitem.logo a,
+.navitem.button {
   border: 2px solid transparent;
   border-radius: 0.5em;
 }
 
 .navbar.top .navitem.link:focus,
 .navbar.top .navitem.link:hover,
-.navbar.top .navitem.logo a:hover {
+.navbar.top .navitem.logo a:hover,
+.navbar.top .navitem.button:hover {
   box-shadow: var(--main-box-shadow);
   border: 2px solid var(--main-highlight-color);
 }
@@ -91,4 +93,34 @@
 .navbar.bottom .navitem.link a:hover {
   background-color: var(--main-highlight-color);
   color: var(--main-light-color);
+}
+
+.navbar.top .navitem.button {
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: var(--main-highlight-color);
+    cursor: pointer;
+    > button {
+      color: var(--main-light-color);
+    }
+  }
+  > button {
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    height: 2em;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    > span {
+      flex: 0 0 25%;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
 }
