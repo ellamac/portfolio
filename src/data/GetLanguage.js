@@ -1,9 +1,10 @@
-export const getLanguage = (object) => {
+export const getLanguage = (object, type) => {
+  const defaultContent = object[type || 'content'];
   const language = localStorage.getItem('language') || 'en';
   if (language === 'fi') {
-    return object.fi || object.content;
+    return object.fi || defaultContent;
   } else {
-    return object.content;
+    return defaultContent;
   }
 };
 

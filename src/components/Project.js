@@ -86,7 +86,9 @@ const Project = ({ data }) => {
               src={`https://res.cloudinary.com/dvvizrtil/image/upload/v1687773619/portfolio/${object.content}`}
               alt='project'
             />
-            <figcaption className='caption'>{object.extra}</figcaption>
+            <figcaption className='caption'>
+              {getLanguage(object, 'extra')}
+            </figcaption>
           </figure>
         );
       default:
