@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import getLanguage from '../data/GetLanguage';
 
 const Brief = (props) => {
   useEffect(() => {
@@ -17,11 +18,18 @@ const Brief = (props) => {
       </figure>
 
       <main className='info'>
-        <h2>What you'll find on here</h2>
+        <h2>
+          {getLanguage({
+            content: "What you'll find on here",
+            fi: 'Mikä tämä on?',
+          })}
+        </h2>
         <p>
-          This porfolio is for others to check out my previous work and for me
-          to follow my progress as I transition from a graduate student to a
-          professional.
+          {getLanguage({
+            content:
+              'This porfolio is for others to check out my previous work and for me to follow my progress as I transition from a graduate student to a professional.',
+            fi: 'Tämä portfolio on tarkoitettu aikaisempien projektieni esittelyyn. Se on myös minulle tapa seurata omaa kehitystäni opiskelijasta asiantuntijaksi.',
+          })}
         </p>
       </main>
     </section>

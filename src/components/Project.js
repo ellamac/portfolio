@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import '../styles/projects.css';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import getLanguage from '../data/GetLanguage';
 
 const Project = ({ data }) => {
   const { name } = useParams();
@@ -17,24 +18,33 @@ const Project = ({ data }) => {
     }
   }, [data, name]);
 
+  const getContent = (object) => {
+    const language = localStorage.getItem('language');
+    if (language === 'fi') {
+      return object.fi || object.content;
+    } else {
+      return object.content;
+    }
+  };
+
   const switchhHtmlElements = (object, index) => {
     switch (object.type) {
       case 'header':
         return (
           <h1 className='project header' key={`project-header-${index}`}>
-            {object.content}
+            {getContent(object)}
           </h1>
         );
       case 'intro':
         return (
           <p className='project intro' key={`project-intro-${index}`}>
-            {object.content}
+            {getContent(object)}
           </p>
         );
       case 'h2':
         return (
           <h2 className='project subhead two' key={`project-subhead-${index}`}>
-            {object.content}
+            {getContent(object)}
           </h2>
         );
       case 'h3':
@@ -43,24 +53,26 @@ const Project = ({ data }) => {
             className='project subhead three'
             key={`project-subhead-${index}`}
           >
-            {object.content}
+            {getContent(object)}
           </h3>
         );
       case 'p':
-        const split = object.content.split('*').map((s) =>
-          s.includes('http') ? (
-            <a
-              href={s.substring(s.indexOf('[') + 1, s.indexOf(']'))}
-              target='_blank'
-              rel='noreferrer'
-            >
-              {s.substring(0, s.indexOf('['))}
-              <OpenInNewIcon className='newTab' />
-            </a>
-          ) : (
-            s
-          )
-        );
+        const split = getContent(object)
+          .split('*')
+          .map((s) =>
+            s.includes('http') ? (
+              <a
+                href={s.substring(s.indexOf('[') + 1, s.indexOf(']'))}
+                target='_blank'
+                rel='noreferrer'
+              >
+                {s.substring(0, s.indexOf('['))}
+                <OpenInNewIcon className='newTab' />
+              </a>
+            ) : (
+              s
+            )
+          );
 
         return <p className='project para'>{split.map((s) => s)}</p>;
       case 'img':
@@ -86,7 +98,7 @@ const Project = ({ data }) => {
       <>
         <Link to={-1} className='project back backLink'>
           <ArrowBackIcon className='project backArrow' />
-          Back
+          {getLanguage({ content: 'Back', fi: 'Takaisin' })}
         </Link>
       </>
     );

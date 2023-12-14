@@ -14,6 +14,19 @@ const dataFiles = [
 
 const Main = (props) => {
   const [data, setData] = useState([]);
+  const [language, setLanguage] = useState(
+    localStorage.getItem('language') || 'en'
+  );
+
+  useEffect(() => {
+    const lang = localStorage.getItem('language');
+    if (lang) {
+      setLanguage(lang);
+    } else {
+      setLanguage('en');
+      localStorage.setItem('language', language);
+    }
+  }, []);
 
   /* Gets data from Google sheets */
   useEffect(() => {
@@ -40,10 +53,16 @@ const Main = (props) => {
       .catch((err) => console.log('Something went wrong:', err));
   }, []);
 
+  const changeLanguage = () => {
+    const lang = language === 'en' ? 'fi' : 'en';
+    setLanguage(lang);
+    localStorage.setItem('language', lang);
+  };
+
   return (
     <>
       <ScrollToTop />
-      <NavbarTop />
+      <NavbarTop language={language} changeLanguage={changeLanguage} />
       <Content data={data} />
       <NavbarBottom />
     </>

@@ -6,6 +6,7 @@ import CardNav from './CardNav';
 import Projects from './Projects';
 import Contact from './Contact';
 import Project from './Project';
+import getLanguage from '../data/GetLanguage';
 const Content = ({ data }) => {
   return (
     <main className='content'>
@@ -17,7 +18,7 @@ const Content = ({ data }) => {
             index
             element={
               <>
-                <h1>Projects</h1>
+                <h1>{getLanguage({ content: 'Projects', fi: 'Projektit' })}</h1>
                 <CardNav
                   header={'Projects'}
                   data={data[0]}

@@ -1,8 +1,10 @@
-import React from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/navbars.css';
 import logo from '../images/logo.jpg';
-const NavbarTop = (props) => {
+import LanguageIcon from '@mui/icons-material/Language';
+import getLanguage from '../data/GetLanguage';
+const NavbarTop = ({ language, changeLanguage }) => {
   return (
     <header>
       <ul className='navbar top'>
@@ -13,19 +15,31 @@ const NavbarTop = (props) => {
         </li>
         <li className='navitem link'>
           <NavLink exact='true' to='/'>
-            Home
+            {getLanguage({ content: 'Home', fi: 'Etusivu' })}
           </NavLink>
         </li>
         <li className='navitem link'>
           <NavLink exact='true' to='/CV'>
-            CV
+            {getLanguage({ content: 'Résumé', fi: 'CV' })}
           </NavLink>
         </li>
         <li className='navitem link'>
-          <NavLink to='/projects'>Projects</NavLink>
+          <NavLink to='/projects'>
+            {' '}
+            {getLanguage({ content: 'Projects', fi: 'Projektit' })}
+          </NavLink>
         </li>
         <li className='navitem link'>
-          <NavLink to='/contact'>Contact</NavLink>
+          <NavLink to='/contact'>
+            {' '}
+            {getLanguage({ content: 'Contact', fi: 'Ota yhteyttä' })}
+          </NavLink>
+        </li>
+        <li className='navitem button'>
+          <button onClick={changeLanguage} type='button' aria-haspopup='menu'>
+            <LanguageIcon />
+            <span>{language}</span>
+          </button>
         </li>
       </ul>
     </header>
