@@ -17,6 +17,7 @@
 .navitem {
   text-align: center;
   flex: 0 0 10%;
+  min-width: max-content;
   box-sizing: border-box;
   height: calc(2em + 4px); /*height + border widths*/
 
