@@ -17,7 +17,7 @@ const Contact = (props) => {
       <p>
         {getLanguage({
           content: 'Please contact me via email or LinkedIn:',
-          fi: 'Ota yhteyttä minuun sähköpostitse tai linkkarissa:',
+          fi: 'Ota yhteyttä minuun sähköpostitse tai Linkkarissa:',
         })}
       </p>
       <p>

@@ -59,9 +59,10 @@ const Project = ({ data }) => {
       case 'p':
         const split = getContent(object)
           .split('*')
-          .map((s) =>
+          .map((s, i) =>
             s.includes('http') ? (
               <a
+                key={`${s.prop}-${i}`}
                 href={s.substring(s.indexOf('[') + 1, s.indexOf(']'))}
                 target='_blank'
                 rel='noreferrer'
@@ -74,7 +75,11 @@ const Project = ({ data }) => {
             )
           );
 
-        return <p className='project para'>{split.map((s) => s)}</p>;
+        return (
+          <p className='project para' key={`project-para-${index}`}>
+            {split.map((s) => s)}
+          </p>
+        );
       case 'img':
       case 'mainimg':
         return (

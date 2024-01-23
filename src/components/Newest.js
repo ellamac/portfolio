@@ -21,7 +21,7 @@ const Newest = ({ header, data, type, back }) => {
         <p>Loading...</p>
       )}{' '}
       <Link className='newest all' to='/projects'>
-        {getLanguage({ content: 'All projects', fi: 'kaikki projektit' })}
+        {getLanguage({ content: 'All projects', fi: 'Kaikki projektit' })}
       </Link>
     </section>
   );

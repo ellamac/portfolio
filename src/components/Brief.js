@@ -21,13 +21,13 @@ const Brief = (props) => {
         <h2>
           {getLanguage({
             content: "What you'll find on here",
-            fi: 'Mikä tämä on?',
+            fi: 'Mitä löydät täältä',
           })}
         </h2>
         <p>
           {getLanguage({
             content:
-              'This porfolio is for others to check out my previous work and for me to follow my progress as I transition from a graduate student to a professional.',
+              'This portfolio is for others to check out my previous work and for me to follow my progress as I transition from a graduate student to a professional.',
             fi: 'Tämä portfolio on tarkoitettu aikaisempien projektieni esittelyyn. Se on myös minulle tapa seurata omaa kehitystäni opiskelijasta asiantuntijaksi.',
           })}
         </p>
