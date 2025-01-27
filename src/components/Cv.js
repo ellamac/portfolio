@@ -31,7 +31,7 @@ const Cv = ({ data }) => {
       );
 
   const content_to_list = (text_to_split) =>
-    getContent(text_to_split).split('-').slice(1);
+    getContent(text_to_split).split('*-*').slice(1);
 
   const switchHtmlElements = (object, index) => {
     switch (object.type) {
@@ -87,7 +87,7 @@ const Cv = ({ data }) => {
           <ol className='cv ol' key={`cv-ul-${index}`}>
             {content_to_list(object).map((s, i) => (
               <li className='cv li' key={`cv-li-${index}-${i}`}>
-                {s}
+                {content_to_link(s).map((s) => s)}
               </li>
             ))}
           </ol>
