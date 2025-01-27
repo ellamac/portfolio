@@ -48,7 +48,7 @@ const Main = (props) => {
         results.forEach((result, index) => {
           datas.push(result);
         });
-        setData(sortDatas(chunkDatas(datas))); // now since .then() excutes after all promises are resolved, filesData contains all the parsed files.
+        setData(sortDatas(chunkDatas(datas))); // now since .then() executes after all promises are resolved, filesData contains all the parsed files.
       })
       .catch((err) => console.log('Something went wrong:', err));
   }, []);

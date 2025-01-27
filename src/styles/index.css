@@ -97,15 +97,22 @@ h3 {
 
 h4,
 h5,
-p {
+p,
+li {
   margin: 0.5em 0;
   padding: 0;
 }
 
-p {
+p,
+li {
   font-size: 1em;
   line-height: 1.5em;
   font-weight: 300;
+}
+
+ul,
+ol {
+  padding-left: 2em;
 }
 
 a {
