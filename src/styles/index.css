@@ -1,3 +1,27 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  color-scheme: light dark;
+
+  --main-dark-color: #003c2b;
+  --main-light-color: rgb(255, 254, 233);
+
+  color: var(--main-dark-color);
+  background-color: var(--main-light-color);
+
+  @media (prefers-color-scheme: light) {
+    background-color: rgba(255, 254, 233, 0.87);
+    color: #003c2b;
+  }
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /*!!!!!========RESPONSIVE========!!!!!*/
 
 /*Biggest screen size (example desktop) */
