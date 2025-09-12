@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 const Card = ({ content, type, back }) => {
   //const navigate = useNavigate();
@@ -10,7 +9,7 @@ const Card = ({ content, type, back }) => {
     >
       <img
         className='card bg'
-        src={`https://res.cloudinary.com/dvvizrtil/image/upload/v1687773619/portfolio/${content.mainimg}`}
+        src={content.mainimg}
         alt={`decoration for article about ${content.header}`}
       />
       <section className='card content'>

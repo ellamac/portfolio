@@ -1,18 +1,7 @@
 @import './index.css';
 
-.project {
-  padding: 0;
-  margin: 0;
-  flex: 1 1 auto;
-}
-.project.header,
-.project.para,
-.project.intro,
-.project.subhead {
-  margin: 2vh 0;
-}
 /* =================================== */
-/* ============BACK BUTTON============ */
+/* ============BACK BUTTONS============ */
 /* =================================== */
 .project.back {
   flex: 0 0 100%;
@@ -42,7 +31,7 @@
 }
 
 .project.backArrow {
-  flex: 0 0 0.9em;
+  flex: 0 0 0.75em;
   height: auto;
   margin: 0.1em 0.1em 0.2em;
 }
@@ -54,51 +43,23 @@
 /* =================================== */
 /* ==============IMAGES=============== */
 /* =================================== */
-.project.picncap {
-  max-height: 30vh;
+
+article.markdownpage p:has(img):has(em) {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
 }
 
-.project.picncap img {
+article.markdownpage img {
+  max-width: 100%;
+  height: auto;
+  max-height: 50vh;
+}
+
+/* postauksen eka kuva bannerimainen */
+article.markdownpage p:first-of-type img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  overflow: hidden;
-}
-
-@media screen and (orientation: portrait) {
-  .project.picncap.img {
-    max-width: initial;
-    width: 90%;
-    float: initial;
-    margin: auto;
-  }
-}
-
-.project.picncap .caption {
-  font-weight: 400;
-  margin: 0.3em 0 0;
-}
-
-/* =================================== */
-/* =============HEADINGS============== */
-/* =================================== */
-
-.project.picncap.mainimg {
-  flex: 1 1 calc(50vmin - 0.5em);
-  max-height: 25vh;
-}
-.project.picncap.mainimg img {
+  aspect-ratio: 3/1;
   object-fit: cover;
-}
-.project.subhead {
-  flex: 0 0 100%;
-}
-
-.project.intro {
-  font-weight: 400;
-  font-style: italic;
 }
