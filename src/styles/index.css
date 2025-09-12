@@ -1,27 +1,3 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 16px;
-  color-scheme: light dark;
-
-  --main-dark-color: #003c2b;
-  --main-light-color: rgb(255, 254, 233);
-
-  color: var(--main-dark-color);
-  background-color: var(--main-light-color);
-
-  @media (prefers-color-scheme: light) {
-    background-color: rgba(255, 254, 233, 0.87);
-    color: #003c2b;
-  }
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /*!!!!!========RESPONSIVE========!!!!!*/
 
 /*Biggest screen size (example desktop) */
@@ -54,26 +30,45 @@ body {
   margin: 0;
 }
 
-#root {
+:root {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
 
   /*universal colors and fonts */
   --main-bg-color: rgb(213, 213, 213);
-  --main-dark-color: rgb(0, 0, 0);
-  --main-light-color: #fff;
-  --main-highlight-color: rgb(35, 134, 96);
-  --main-highlight-color-60p: rgb(35, 134, 96, 0.6);
-  --main-highlight-color-30p: rgb(35, 134, 96, 0.3);
+  --main-dark-color: color(display-p3 0.03 0.11 0.08);
+  --main-light-color: rgb(255, 255, 255);
+  --main-highlight-color: rgb(35, 139, 99);
+  --main-highlight-color-60p: rgb(35, 139, 99, 0.6);
+  --main-highlight-color-30p: rgb(35, 139, 99, 0.3);
   --main-serif-font: 'Archivo', sans-serif;
   --main-sans-serif-font: 'Inter', sans-serif;
   --main-hover-border: 0;
   --main-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
 
   font-family: var(--main-sans-serif-font);
+
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  color-scheme: light dark;
+
   color: var(--main-dark-color);
+  background-color: var(--main-light-color);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--main-dark-color);
+    color: var(--main-light-color);
+    --main-box-shadow: 0px 0px 14px 0px rgb(41 67 57);
+  }
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 * {
   box-sizing: border-box;
 }

@@ -5,6 +5,9 @@
   margin: 0;
   list-style-type: none;
   background-color: var(--main-light-color);
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--main-dark-color);
+  }
   display: flex;
   justify-content: right;
   align-items: center;
@@ -41,7 +44,10 @@
 }
 
 .navitem a {
-  color: var(--main-dark-color);
+  /* color: var(--main-dark-color);
+  @media (prefers-color-scheme: dark) {
+    color: var(--main-light-color);
+  } */
   text-decoration: none;
 }
 

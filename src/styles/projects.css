@@ -5,7 +5,7 @@
 /* =================================== */
 .project.back {
   flex: 0 0 100%;
-  background-color: var(--main-light-color);
+  /* background-color: var(--main-light-color); */
 }
 .project.backLink {
   padding: 0.5em;
