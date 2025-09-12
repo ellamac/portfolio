@@ -21,5 +21,5 @@ The user writes the information of the desired event in the text box following t
 
 As a further development, it could be possible for the user to define the syntax with which the event is written in the text field as well as the selection of the time zone.
 
-![Screenshot from Safari iPhone 13 mini](portfolio/imgs/kalenteri-ss-pysty.png)
+![Screenshot from Safari iPhone 13 mini](portfolio/imgs/kalenteri-ss-pysty.jpeg)
 *Screenshot from Safari iPhone 13 mini*

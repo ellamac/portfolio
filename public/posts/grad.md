@@ -1,4 +1,4 @@
-![Waterfalls from Taipei](/portfolio/imgs/img2.jpg)
+![Waterfalls from Taipei](/portfolio/imgs/img2.jpeg)
 
 # Cognitive load and programming learning materials
 

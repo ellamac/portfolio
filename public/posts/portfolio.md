@@ -1,4 +1,4 @@
-![Pic of a birds nest from my cottage :)](/portfolio/imgs/scratch.jpg)
+![Pic of a birds nest from my cottage :)](/portfolio/imgs/scratch.jpeg)
 
 # Creating my portfolio
 
