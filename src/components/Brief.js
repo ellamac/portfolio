@@ -4,7 +4,7 @@ const Brief = () => {
   return (
     <section className='brief'>
       <figure className='pic'>
-        <img src='/portfolio/public/ella2.jpg' alt='My headshot' />
+        <img src='/portfolio/imgs/ella2.jpg' alt='My headshot' />
       </figure>
 
       <main className='info'>
