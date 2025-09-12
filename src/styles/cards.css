@@ -46,7 +46,7 @@
   padding: initial;
   flex: 1 1 calc(50% - 2em);
   gap: 0;
-  color: var(--main-dark-color);
+  /*   color: var(--main-dark-color); */
 }
 
 .newest {
