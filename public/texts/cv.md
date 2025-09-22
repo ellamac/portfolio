@@ -10,9 +10,9 @@ I am a UX professional with a foundation in cognitive and computer science, focu
 
 *Star IT, November 2023 - Present*
 
-- Resolved end-user issues related to accounts, software, and hardware, while managing M365 and Google Workspace environments.
-- Developed customer portal interfaces, enhancing usability and accessibility.
-- Recognized and resolved service issues while working directly with clients.
+- Resolving efficiently end-user issues relating to accounts, software, and hardware, while managing M365 and Google Workspace environments.
+- Developing visually pleasing customer portal interfaces, enhancing usability and accessibility.
+- Recognizing and resolving service issues while working directly with diverse clients.
 - Consistently received praise for delivering excellent and knowledgeable service.
 
 ### Hybrid Learning Technical Assistant
