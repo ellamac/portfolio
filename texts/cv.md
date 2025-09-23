@@ -10,18 +10,18 @@ I am a UX professional with a foundation in cognitive and computer science, focu
 
 *Star IT, November 2023 - Present*
 
-- Resolved end-user issues related to accounts, software, and hardware, while managing M365 and Google Workspace environments.
-- Developed customer portal interfaces, enhancing usability and accessibility.
-- Recognized and resolved service issues while working directly with clients.
+- Efficiently resolving end-user issues relating to accounts, software, and hardware, while managing M365 and Google Workspace environments.
+- Developing visually pleasing customer portal interfaces, while enhancing usability and accessibility.
+- Recognizing and resolving service issues while working directly with diverse clients.
 - Consistently received praise for delivering excellent and knowledgeable service.
 
 ### Hybrid Learning Technical Assistant
 
 *University of Jyväskylä, Faculty of Information Technology, January 2022 - December 2022*
 
-- Maintained digital learning platforms and organized hybrid teaching solutions.
-- Designed and implemented a video studio for recording educational videos.
-- Developed mentoring programs and hosted webinars for alumni engagement.
+- Maintained digital learning platforms and organized hybrid teaching solutions for lecturers.
+- Designed and implemented a video studio for recording educational videos, including video animations and templates.
+- Developed a plan for future mentoring programs and hosted webinars for alumni engagement.
 - Documented key outcomes during a six month collaboration with a local high school.
 
 ### Junior Learning Experience Developer
@@ -58,7 +58,7 @@ Figma, Sketch, Adobe Illustrator, InDesign, Photoshop, After Effects.
 
 ### Web Development
 
-HTML, CSS, JavaScript, React, Node.js, PostgreSQL.
+HTML, CSS, JavaScript, React, Node.js.
 
 ### Prototyping & Testing
 
@@ -66,7 +66,7 @@ UX research processes, wireframing, usability testing, accessibility analysis.
 
 ### Platforms
 
-M365, Google Workspace, ServiceNow development, extensive knowledge of Linux, Windows and MacOS.
+M365, Google Workspace, ServiceNow development, extensive knowledge of Windows and MacOS.
 
 ## Language proficiency
 
