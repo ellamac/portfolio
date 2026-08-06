@@ -6,13 +6,24 @@ I am a UX professional with a foundation in cognitive and computer science, focu
 
 ## Work experience
 
+## UX Developer  
+
+*Spesnes, October 2025 – Present*
+
+- Lead UX research, UI design, and frontend development for an industrial platform used to manage and monitor cooling fluids.
+- Designing and implementing new product features from prototypes through to production using Figma, Django, JavaScript, HTML, CSS, Bootstrap.
+- Improving the platform's overall user experience by redesigning interfaces, streamlining workflows, and modernizing legacy functionality.
+- Conducting user interviews and translating research findings into actionable design improvements, user journeys, personas, wireframes, and interactive prototypes.
+- Refactoring and modernizing the frontend codebase to improve maintainability, performance, and consistency.
+- Developing the company's visual identity, including branding, UI components, design guidelines, and UX writing to create a cohesive user experience.
+
 ### Junior Support Specialist
 
-*Star IT, November 2023 - Present*
+*Star IT, November 2023 - October 2025*
 
-- Efficiently resolving end-user issues relating to accounts, software, and hardware, while managing M365 and Google Workspace environments.
-- Developing visually pleasing customer portal interfaces, while enhancing usability and accessibility.
-- Recognizing and resolving service issues while working directly with diverse clients.
+- Efficiently resolved end-user issues relating to accounts, software, and hardware, while managing M365 and Google Workspace environments.
+- Developed visually pleasing customer portal interfaces, while enhancing usability and accessibility.
+- Recognized and resolved service issues while working directly with diverse clients.
 - Consistently received praise for delivering excellent and knowledgeable service.
 
 ### Hybrid Learning Technical Assistant
